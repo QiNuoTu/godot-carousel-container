@@ -1,0 +1,85 @@
+[gd_scene load_steps=3 format=3 uid="uid://spvyekl36dli"]
+
+[ext_resource type="Script" uid="uid://bvg1h2j1pf37" path="res://script/main_menu.gd" id="1_2fwvj"]
+[ext_resource type="Script" uid="uid://c88vrince6a00" path="res://script/carousel_container/h_circular_container.gd" id="2_hxu56"]
+
+[node name="MainMenu" type="Control" node_paths=PackedStringArray("carousel_container")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2fwvj")
+carousel_container = NodePath("HCircularContainer")
+
+[node name="HCircularContainer" type="Container" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 576.0
+offset_top = 324.0
+offset_right = -576.0
+offset_bottom = -324.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_hxu56")
+selected_index = 5
+metadata/_custom_type_script = "uid://c88vrince6a00"
+
+[node name="ColorRect7" type="ColorRect" parent="HCircularContainer"]
+modulate = Color(1, 1, 1, 0.12117148)
+z_index = 5
+custom_minimum_size = Vector2(135, 135)
+layout_mode = 2
+mouse_filter = 2
+color = Color(1, 0, 1, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="HCircularContainer"]
+modulate = Color(1, 1, 1, 0.106143944)
+z_index = 4
+custom_minimum_size = Vector2(135, 135)
+layout_mode = 2
+mouse_filter = 2
+color = Color(0, 0, 1, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="HCircularContainer"]
+modulate = Color(1, 1, 1, 0.2895079)
+z_index = 4
+custom_minimum_size = Vector2(135, 135)
+layout_mode = 2
+mouse_filter = 2
+color = Color(0, 1, 1, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="HCircularContainer"]
+modulate = Color(1, 1, 1, 0.62313765)
+z_index = 5
+custom_minimum_size = Vector2(135, 135)
+layout_mode = 2
+mouse_filter = 2
+color = Color(0, 1, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="HCircularContainer"]
+modulate = Color(1, 1, 1, 0.95278054)
+z_index = 6
+custom_minimum_size = Vector2(135, 135)
+layout_mode = 2
+mouse_filter = 2
+color = Color(1, 1, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="HCircularContainer"]
+modulate = Color(1, 1, 1, 0.67635435)
+z_index = 8
+custom_minimum_size = Vector2(135, 135)
+layout_mode = 2
+focus_mode = 2
+color = Color(1, 0.49019608, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="HCircularContainer"]
+modulate = Color(1, 1, 1, 0.3309042)
+z_index = 6
+custom_minimum_size = Vector2(135, 135)
+layout_mode = 2
+mouse_filter = 2
+color = Color(1, 0, 0, 1)
